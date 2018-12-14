@@ -1,5 +1,20 @@
 vim command + JS snippet for crapshoot livereload
 
+
+![screen recording](screencap.gif)
+
+```vimL
+" use in vim
+:autocmd BufWritePost * execute "!echo `date` > %.update"
+```
+
+```html
+<!-- add in webpage -->
+<script src="https://www.alexstachowiak.com/livereload.js"></script>
+```
+
+
+
 ### The Algorithm
 1. Serve files using `python -m SimpleHTTPServer 8869`
 
